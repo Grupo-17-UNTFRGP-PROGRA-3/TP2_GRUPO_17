@@ -19,6 +19,8 @@
                 </tr>
             </table>
         </div>
+        <asp:Label ID="lblNombre2" runat="server" Text="Ingrese nombre del producto:"></asp:Label>
+        <asp:TextBox ID="txtNombre2" runat="server"></asp:TextBox>
     </form>
 </body>
 </html>

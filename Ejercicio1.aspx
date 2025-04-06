@@ -53,21 +53,21 @@
                     <td class="auto-style5"><asp:TextBox runat="server" ID="txtNombre1" Width="173px"></asp:TextBox></td>
                 <td class="auto-style4"></td>
                 <td class="auto-style7">cantidad:</td>
-                <td class="auto-style4"><asp:TextBox runat="server" ID="txtCantidad" Width="173px"></asp:TextBox></td>
+                <td class="auto-style4"><asp:TextBox runat="server" ID="txtCantidad1" Width="173px"></asp:TextBox></td>
                 <td class="auto-style4"></td>
                 <td class="auto-style4"></td>
                 <td class="auto-style4"></td>
             </tr>
             <tr>
                 <td class="auto-style2">
-        <asp:Label ID="lblNombre2" runat="server" Text="Ingrese nombre del producto:"></asp:Label>
+                    <label for="txtNombre1">Ingrese nombre del producto: </label>
                 </td>
                 <td class="auto-style6">
         <asp:TextBox ID="txtNombre2" runat="server" Width="174px"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style8">cantidad:</td>
+                <td><asp:TextBox runat="server" ID="txtCantidad2" Width="173px"></asp:TextBox></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>

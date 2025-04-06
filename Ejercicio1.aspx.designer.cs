@@ -33,22 +33,13 @@ namespace TP2_GRUPO_17
         protected global::System.Web.UI.WebControls.TextBox txtNombre1;
 
         /// <summary>
-        /// Control txtCantidad.
+        /// Control txtCantidad1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCantidad;
-
-        /// <summary>
-        /// Control lblNombre2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNombre2;
+        protected global::System.Web.UI.WebControls.TextBox txtCantidad1;
 
         /// <summary>
         /// Control txtNombre2.
@@ -58,5 +49,14 @@ namespace TP2_GRUPO_17
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNombre2;
+
+        /// <summary>
+        /// Control txtCantidad2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCantidad2;
     }
 }

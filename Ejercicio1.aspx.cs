@@ -13,5 +13,17 @@ namespace TP2_GRUPO_17
 		{
 
 		}
-	}
+
+        protected void btnGenerar_Click(object sender, EventArgs e)
+        {
+			string tabla = "<table border = '1'>";
+			tabla += "<tr>";
+			tabla += "<th>Producto</th><th>Cantidad</th>";
+			tabla += "</tr>";
+
+
+			tabla += "</table>";
+			lblTabla.Text = tabla;
+        }
+    }
 }

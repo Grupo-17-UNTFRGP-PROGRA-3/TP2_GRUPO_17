@@ -93,7 +93,7 @@
                     </td>
                 <td class="auto-style4"></td>
                 <td class="auto-style7">Cantidad:</td>
-                <td class="auto-style4"><asp:TextBox runat="server" ID="txtCantidad1" Width="173px" TextMode="Number" ToolTip="Ingrese solo numeros"></asp:TextBox></td>
+                <td class="auto-style4"><asp:TextBox runat="server" ID="txtCantidad1" Width="173px" TextMode="Number" ToolTip="Ingrese solo numeros positivos"></asp:TextBox></td>
                 <td class="auto-style4"></td>
                 <td class="auto-style4"></td>
                 <td class="auto-style4"></td>
@@ -115,7 +115,7 @@
                 </td>
                 <td class="auto-style4"></td>
                 <td class="auto-style7">Cantidad:</td>
-                <td class="auto-style4"><asp:TextBox runat="server" ID="txtCantidad2" Width="173px" TextMode="Number" ToolTip="Ingrese solo numeros"></asp:TextBox></td>
+                <td class="auto-style4"><asp:TextBox runat="server" ID="txtCantidad2" Width="173px" TextMode="Number" ToolTip="Ingrese solo numeros positivos"></asp:TextBox></td>
                 <td class="auto-style4"></td>
                 <td class="auto-style4"></td>
             </tr>

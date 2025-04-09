@@ -44,7 +44,9 @@
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">-</td>
+                <td class="auto-style3">
+                    <asp:Button ID="btnEjercicio2" runat="server" OnClick="btnEjercicio2_Click" Text="Ejercicio 2" />
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

@@ -49,6 +49,21 @@
             width: 208px;
             height: 23px;
         }
+        .auto-style17 {
+            width: 208px;
+            height: 30px;
+        }
+        .auto-style18 {
+            width: 216px;
+            height: 30px;
+        }
+        .auto-style19 {
+            height: 30px;
+        }
+        .auto-style20 {
+            width: 93px;
+            height: 30px;
+        }
     </style>
 </head>
 <body>
@@ -65,7 +80,17 @@
         <table class="auto-style1">
             <tr>
                     <td class="auto-style13"><label for="txtNombre1">Ingrese nombre del producto: </label></td>
-                    <td class="auto-style5"><asp:TextBox runat="server" ID="txtNombre1" Width="173px"></asp:TextBox></td>
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="ddlNombre1" runat="server" AutoPostBack="True">
+                            <asp:ListItem>Galletitas</asp:ListItem>
+                            <asp:ListItem>Jugo</asp:ListItem>
+                            <asp:ListItem>Pan</asp:ListItem>
+                            <asp:ListItem>Te</asp:ListItem>
+                            <asp:ListItem>Yerba</asp:ListItem>
+                            <asp:ListItem>Azucar</asp:ListItem>
+                            <asp:ListItem>Sal</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
                 <td class="auto-style4"></td>
                 <td class="auto-style7">Cantidad:</td>
                 <td class="auto-style4"><asp:TextBox runat="server" ID="txtCantidad1" Width="173px" TextMode="Number" ToolTip="Ingrese solo numeros"></asp:TextBox></td>
@@ -74,17 +99,25 @@
                 <td class="auto-style4"></td>
             </tr>
             <tr>
-                <td class="auto-style14">
+                <td class="auto-style13">
                     <label for="txtNombre1">Ingrese nombre del producto: </label>
                 </td>
-                <td class="auto-style15">
-        <asp:TextBox ID="txtNombre2" runat="server" Width="174px"></asp:TextBox>
+                <td class="auto-style5">
+                    <asp:DropDownList ID="ddlNombre2" runat="server" AutoPostBack="True">
+                        <asp:ListItem>Galletitas</asp:ListItem>
+                        <asp:ListItem>Jugo</asp:ListItem>
+                        <asp:ListItem>Pan</asp:ListItem>
+                        <asp:ListItem>Te</asp:ListItem>
+                        <asp:ListItem>Yerba</asp:ListItem>
+                        <asp:ListItem>Azucar</asp:ListItem>
+                        <asp:ListItem>Sal</asp:ListItem>
+                    </asp:DropDownList>
                 </td>
-                <td>&nbsp;</td>
-                <td class="auto-style8">Cantidad:</td>
-                <td><asp:TextBox runat="server" ID="txtCantidad2" Width="173px" TextMode="Number" ToolTip="Ingrese solo numeros"></asp:TextBox></td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4"></td>
+                <td class="auto-style7">Cantidad:</td>
+                <td class="auto-style4"><asp:TextBox runat="server" ID="txtCantidad2" Width="173px" TextMode="Number" ToolTip="Ingrese solo numeros"></asp:TextBox></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
             </tr>
             <tr>
                 <td class="auto-style14">&nbsp;</td>
@@ -96,15 +129,15 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style14">
+                <td class="auto-style17">
                     <asp:Button ID="btnGenerar" runat="server" OnClick="btnGenerar_Click" Text="Generar Tabla" />
                 </td>
-                <td class="auto-style15">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style18"></td>
+                <td class="auto-style19"></td>
+                <td class="auto-style20"></td>
+                <td class="auto-style19"></td>
+                <td class="auto-style19"></td>
+                <td class="auto-style19"></td>
             </tr>
             <tr>
                 <td class="auto-style16"></td>
@@ -116,15 +149,15 @@
                 <td class="auto-style11"></td>
             </tr>
             <tr>
-                <td class="auto-style14">
+                <td class="auto-style16">
                     <asp:Label ID="lblTabla" runat="server"></asp:Label>
                 </td>
-                <td class="auto-style15">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style10"></td>
+                <td class="auto-style11"></td>
+                <td class="auto-style12"></td>
+                <td class="auto-style11"></td>
+                <td class="auto-style11"></td>
+                <td class="auto-style11"></td>
             </tr>
             <tr>
                 <td class="auto-style14">&nbsp;</td>

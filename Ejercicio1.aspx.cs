@@ -16,13 +16,15 @@ namespace TP2_GRUPO_17
 
         protected void btnGenerar_Click(object sender, EventArgs e)
         {
+			if (txtCantidad1.Text == "") { txtCantidad1.Text = "0"; }
+			if (txtCantidad2.Text == "") { txtCantidad2.Text = "0"; }
+
 			string tabla = "<table border = '1'>";
-			tabla += "<tr>";
-			tabla += "<th>Producto</th><th>Cantidad</th>";
-			tabla += "</tr>";
-
-
-			tabla += "</table>";
+			tabla += "<tr><th>Producto</th><th>Cantidad</th></tr>";
+			tabla += "<tr><td>" + ddlNombre1.SelectedItem.Text + "</td><td>" + txtCantidad1.Text + "</td></tr>";
+			tabla += "<tr><td>" + ddlNombre2.SelectedItem.Text + "</td><td>" + txtCantidad2.Text + "</td></tr>";
+			tabla += "<tr><td>TOTAL</td><td>" + (int.Parse(txtCantidad1.Text) + int.Parse(txtCantidad2.Text)) + "</td></tr>";
+            tabla += "</table>";
 			lblTabla.Text = tabla;
         }
     }

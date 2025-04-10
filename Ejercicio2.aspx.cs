@@ -16,7 +16,7 @@ namespace TP2_GRUPO_17
 
         protected void btnVerResumen_Click(object sender, EventArgs e)
         {
-            //Abrir form 2B
+            Server.Transfer("~/Ejercicio2_b.aspx");
         }
     }
 }

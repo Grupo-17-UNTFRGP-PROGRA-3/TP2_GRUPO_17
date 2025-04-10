@@ -30,6 +30,25 @@
             </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;
         </p>
+
+        <table style="margin-left: 80px">
+            <tr>
+                <td><label>Temas:</label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <asp:CheckBoxList ID="cblTemas" runat="server">
+                        <asp:ListItem Value="Ciencias">Ciencias</asp:ListItem>
+                        <asp:ListItem Value="Literatura">Literatura</asp:ListItem>
+                        <asp:ListItem Value="Historia">Historia</asp:ListItem>
+                    </asp:CheckBoxList>
+                </td>
+            </tr>
+        </table>
+
+        <asp:Button ID="btnVerResumen" Text="Ver resumen" runat="server" style="margin-left: 150px; margin-top: 20px" OnClick="btnVerResumen_Click"/>
+
     </form>
 </body>
 </html>

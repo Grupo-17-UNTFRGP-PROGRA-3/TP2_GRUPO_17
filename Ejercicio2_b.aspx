@@ -8,21 +8,30 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <h1 style="margin-left: 40px">Resumen</h1>
-        <p style="margin-left: 40px">
+        <h1 style="margin-left: 160px">Resumen</h1>
+        <p style="margin-left: 160px">
             Nombre:&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="lblNombre" runat="server" Font-Bold="True"></asp:Label>
         </p>
 
-        <p style="margin-left: 40px">
+        <p style="margin-left: 160px">
             Apellido:&nbsp;&nbsp;&nbsp;
             <asp:Label ID="lblApellido" runat="server" Font-Bold="True"></asp:Label>
         </p>
 
-        <p style="margin-left: 40px">
+        <p style="margin-left: 160px">
              Zona:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="lblZona" runat="server" Font-Bold="True"></asp:Label>
         </p>
+        <p style="margin-left: 160px">
+             <asp:Label ID="lblTemas" runat="server"></asp:Label>
+        </p>
+        <p style="margin-left: 40px">
+             &nbsp;</p>
+        <p style="margin-left: 40px">
+             &nbsp;</p>
+        <p style="margin-left: 40px">
+             &nbsp;</p>
 
     </form>
 </body>

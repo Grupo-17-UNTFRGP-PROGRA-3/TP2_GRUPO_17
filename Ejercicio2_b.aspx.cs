@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -27,6 +28,27 @@ namespace TP2_GRUPO_17
                 zona = zona.Substring(5);
                 lblZona.Text = zona;
             }
+
+            //--------------------------------------------------------------------------------
+
+            string aux = "<table> <th>Los temas seleccionados son: </th>";
+            List<string> seleccionados;
+
+            if (Context.Items["Seleccionados"] != null)
+            {
+                seleccionados = (List<string>)Context.Items["Seleccionados"];
+                foreach (string i in seleccionados)
+                {
+                    aux += "<tr><td></td><td>" + i + "</td></tr>";
+                }
+                aux += "</table>";
+            }
+            else
+            {
+                aux = "No fue seleccionado ningun tema";
+            }
+
+            lblTemas.Text = aux;
         }
     }
 }

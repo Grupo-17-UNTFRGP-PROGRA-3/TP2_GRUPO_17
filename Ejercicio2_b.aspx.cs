@@ -34,9 +34,10 @@ namespace TP2_GRUPO_17
             string aux = "<table> <th>Los temas seleccionados son: </th>";
             List<string> seleccionados;
 
-            if (Context.Items["Seleccionados"] != null)
+            seleccionados = (List<string>)Context.Items["Seleccionados"];
+
+            if (seleccionados.Any())
             {
-                seleccionados = (List<string>)Context.Items["Seleccionados"];
                 foreach (string i in seleccionados)
                 {
                     aux += "<tr><td></td><td>" + i + "</td></tr>";
@@ -49,6 +50,7 @@ namespace TP2_GRUPO_17
             }
 
             lblTemas.Text = aux;
+
         }
     }
 }

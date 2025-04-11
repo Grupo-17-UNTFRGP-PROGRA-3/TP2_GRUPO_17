@@ -16,20 +16,26 @@ namespace TP2_GRUPO_17
 
         protected void btnVerResumen_Click(object sender, EventArgs e)
         {
-            List<string> seleccionados = new List<string>();
-
-            foreach (ListItem item in cblTemas.Items)
+            if (txtNombre.Text.ToString() != "" && txtApellido.Text.ToString() != "")
             {
-                if (item.Selected)
+                List<string> seleccionados = new List<string>();
+
+                foreach (ListItem item in cblTemas.Items)
                 {
-                    seleccionados.Add(item.Text);
+                    if (item.Selected)
+                    {
+                        seleccionados.Add(item.Text);
+                    }
                 }
+
+                Context.Items["Seleccionados"] = seleccionados;
+
+                Server.Transfer("~/Ejercicio2_b.aspx");
             }
-
-            Context.Items["Seleccionados"] = seleccionados;
-
-
-            Server.Transfer("~/Ejercicio2_b.aspx");
+            else
+            {
+                lblAviso.Text = "Ingrese nombre y apellido";
+            }            
         }
     }
 }

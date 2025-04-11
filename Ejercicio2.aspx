@@ -16,9 +16,11 @@
         <p style="margin-left: 80px">
             Nombre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtNombre" runat="server" Width="121px"></asp:TextBox>
+        &nbsp;<asp:Label ID="lblAviso" runat="server"></asp:Label>
+
         </p>
         <p style="margin-left: 80px">
-            Apellido:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Apellido:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtApellido" runat="server" Width="120px"></asp:TextBox>
         </p>
         <p style="margin-left: 80px">
@@ -49,6 +51,8 @@
 
         <asp:Button ID="btnVerResumen" Text="Ver resumen" runat="server" style="margin-left: 150px; margin-top: 20px" OnClick="btnVerResumen_Click"/>
 
+    &nbsp;
+        
     </form>
 </body>
 </html>

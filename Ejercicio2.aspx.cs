@@ -18,18 +18,6 @@ namespace TP2_GRUPO_17
         {
             if (txtNombre.Text.ToString() != "" && txtApellido.Text.ToString() != "")
             {
-                List<string> seleccionados = new List<string>();
-
-                foreach (ListItem item in cblTemas.Items)
-                {
-                    if (item.Selected)
-                    {
-                        seleccionados.Add(item.Text);
-                    }
-                }
-
-                Context.Items["Seleccionados"] = seleccionados;
-
                 Server.Transfer("~/Ejercicio2_b.aspx");
             }
             else

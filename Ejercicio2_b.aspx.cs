@@ -32,15 +32,19 @@ namespace TP2_GRUPO_17
             //--------------------------------------------------------------------------------
 
             string aux = "<table> <th>Los temas seleccionados son: </th>";
-            List<string> seleccionados;
+            
+            CheckBoxList cbl2 = new CheckBoxList();
 
-            seleccionados = (List<string>)Context.Items["Seleccionados"];
+            cbl2 = ((CheckBoxList)PreviousPage.FindControl("cblTemas"));
 
-            if (seleccionados.Any())
+            if (cbl2.SelectedIndex != -1)
             {
-                foreach (string i in seleccionados)
+                foreach (ListItem itemDeLista in cbl2.Items)
                 {
-                    aux += "<tr><td></td><td>" + i + "</td></tr>";
+                    if (itemDeLista.Selected)
+                    {
+                        aux += "<tr><td></td><td>" + itemDeLista + "</td></tr>";
+                    }
                 }
                 aux += "</table>";
             }

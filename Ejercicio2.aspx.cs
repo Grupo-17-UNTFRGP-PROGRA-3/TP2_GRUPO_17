@@ -16,14 +16,13 @@ namespace TP2_GRUPO_17
 
         protected void btnVerResumen_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text.ToString() != "" && txtApellido.Text.ToString() != "")
-            {
-                Server.Transfer("~/Ejercicio2_b.aspx");
-            }
-            else
+            if(string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtApellido.Text))
             {
                 lblAviso.Text = "Ingrese nombre y apellido";
-            }            
+                return;
+            }
+
+            Server.Transfer("~/Ejercicio2_b.aspx");
         }
     }
 }

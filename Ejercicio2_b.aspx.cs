@@ -16,6 +16,12 @@ namespace TP2_GRUPO_17
             string apellido;
             string zona;
 
+            if (Request["txtNombre"] == null)
+            {
+                Response.Redirect("~/Ejercicio2.aspx");
+                return;
+            }
+
             nombre = Request["txtNombre"].ToString();
             apellido = Request["txtApellido"].ToString();
             zona = Request["ddlCiudades"].ToString();

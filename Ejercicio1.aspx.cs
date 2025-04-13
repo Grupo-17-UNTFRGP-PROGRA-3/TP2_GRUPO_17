@@ -29,8 +29,8 @@ namespace TP2_GRUPO_17
 
 				string tabla = "<table border = '1'>";
 				tabla += "<tr><th>Producto</th><th>Cantidad</th></tr>";
-				tabla += "<tr><td>" + ddlNombre1.SelectedItem.Text + "</td><td>" + txtCantidad1.Text + "</td></tr>";
-				tabla += "<tr><td>" + ddlNombre2.SelectedItem.Text + "</td><td>" + txtCantidad2.Text + "</td></tr>";
+				tabla += "<tr><td>" + txtProducto1.Text + "</td><td>" + txtCantidad1.Text + "</td></tr>";
+				tabla += "<tr><td>" + TxtProducto2.Text + "</td><td>" + txtCantidad2.Text + "</td></tr>";
 				tabla += "<tr><td>TOTAL</td><td>" + (int.Parse(txtCantidad1.Text) + int.Parse(txtCantidad2.Text)) + "</td></tr>";
 				tabla += "</table>";
 				lblTabla.Text = tabla;
@@ -39,6 +39,10 @@ namespace TP2_GRUPO_17
 			{
 				lblTabla.Text = "Ingrese valores positivos";
 			}
+			txtProducto1.Text = "";
+			TxtProducto2.Text = "";
+			txtCantidad1.Text = "";
+			txtCantidad2.Text = "";
         }
     }
 }

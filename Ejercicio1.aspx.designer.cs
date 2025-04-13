@@ -24,13 +24,13 @@ namespace TP2_GRUPO_17
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control ddlNombre1.
+        /// Control txtProducto1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlNombre1;
+        protected global::System.Web.UI.WebControls.TextBox txtProducto1;
 
         /// <summary>
         /// Control txtCantidad1.
@@ -42,13 +42,13 @@ namespace TP2_GRUPO_17
         protected global::System.Web.UI.WebControls.TextBox txtCantidad1;
 
         /// <summary>
-        /// Control ddlNombre2.
+        /// Control TxtProducto2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlNombre2;
+        protected global::System.Web.UI.WebControls.TextBox TxtProducto2;
 
         /// <summary>
         /// Control txtCantidad2.

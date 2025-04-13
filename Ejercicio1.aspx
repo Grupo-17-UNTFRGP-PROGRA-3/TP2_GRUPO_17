@@ -81,15 +81,7 @@
             <tr>
                     <td class="auto-style13"><label for="txtNombre1">Ingrese nombre del producto: </label></td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="ddlNombre1" runat="server" AutoPostBack="True">
-                            <asp:ListItem>Galletitas</asp:ListItem>
-                            <asp:ListItem>Jugo</asp:ListItem>
-                            <asp:ListItem>Pan</asp:ListItem>
-                            <asp:ListItem>Te</asp:ListItem>
-                            <asp:ListItem>Yerba</asp:ListItem>
-                            <asp:ListItem>Azucar</asp:ListItem>
-                            <asp:ListItem>Sal</asp:ListItem>
-                        </asp:DropDownList>
+                        <asp:TextBox ID="txtProducto1" runat="server"></asp:TextBox>
                     </td>
                 <td class="auto-style4"></td>
                 <td class="auto-style7">Cantidad:</td>
@@ -103,15 +95,7 @@
                     <label for="txtNombre1">Ingrese nombre del producto: </label>
                 </td>
                 <td class="auto-style5">
-                    <asp:DropDownList ID="ddlNombre2" runat="server" AutoPostBack="True">
-                        <asp:ListItem>Galletitas</asp:ListItem>
-                        <asp:ListItem>Jugo</asp:ListItem>
-                        <asp:ListItem>Pan</asp:ListItem>
-                        <asp:ListItem>Te</asp:ListItem>
-                        <asp:ListItem>Yerba</asp:ListItem>
-                        <asp:ListItem>Azucar</asp:ListItem>
-                        <asp:ListItem>Sal</asp:ListItem>
-                    </asp:DropDownList>
+                    <asp:TextBox ID="TxtProducto2" runat="server"></asp:TextBox>
                 </td>
                 <td class="auto-style4"></td>
                 <td class="auto-style7">Cantidad:</td>

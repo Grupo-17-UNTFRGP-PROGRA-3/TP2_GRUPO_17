@@ -10,6 +10,13 @@
 <body>
     <form id="form1" runat="server">
         <h1 style="margin-left: 80px">Trabajo Práctico 2 - Grupo 17</h1>
+        <nav style="margin-left: 80px">
+            <a href="Ejercicio1.aspx">Ejercicio 1</a> |
+            <a href="Ejercicio2.aspx">Ejercicio 2</a> |
+            <a href="Ejercicio3.aspx">Ejercicio 3</a> |
+            <a href="Ejercicio4.aspx">Ejercicio 4</a> |
+            <a href="Ejercicio5.aspx">Ejercicio 5</a>
+        </nav>
         <h2 style="margin-left: 80px">Ejercicio 2</h2>
         <div>
         </div>

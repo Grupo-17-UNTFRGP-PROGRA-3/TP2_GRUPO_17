@@ -28,5 +28,10 @@ namespace TP2_GRUPO_17
         {
             Response.Redirect("~/Ejercicio3.aspx");
         }
+
+        protected void btnEjercicio4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Ejercicio4.aspx");
+        }
     }
 }

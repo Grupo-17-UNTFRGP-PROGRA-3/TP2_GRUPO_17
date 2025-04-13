@@ -17,7 +17,13 @@ namespace TP2_GRUPO_17
 
         protected void btnGenerar_Click(object sender, EventArgs e)
         {
-			if (txtCantidad1.Text == "") { txtCantidad1.Text = "0"; }
+			if(string.IsNullOrWhiteSpace(txtProducto1.Text) || string.IsNullOrWhiteSpace(TxtProducto2.Text))
+            {
+                lblTabla.Text = "Ingrese los nombres de ambos productos";
+                return;
+            }
+
+            if (txtCantidad1.Text == "") { txtCantidad1.Text = "0"; }
 			if (txtCantidad2.Text == "") { txtCantidad2.Text = "0"; }
 
 			int num1, num2;

@@ -20,6 +20,27 @@
         .auto-style4 {
             height: 23px;
         }
+        .auto-style5 {
+            width: 72px;
+        }
+        .auto-style6 {
+            width: 72px;
+            height: 23px;
+        }
+        .auto-style7 {
+            width: 281px;
+        }
+        .auto-style8 {
+            height: 23px;
+            width: 281px;
+        }
+        .auto-style9 {
+            width: 332px;
+        }
+        .auto-style10 {
+            width: 332px;
+            height: 23px;
+        }
     </style>
 </head>
 <body>
@@ -38,49 +59,53 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">Usuario: </td>
+                    <td class="auto-style7">
+                        <asp:TextBox ID="txtUsuario" runat="server" Width="249px" AutoPostBack="True" OnTextChanged="txtUsuario_TextChanged"></asp:TextBox>
+                    </td>
+                    <td class="auto-style9">
+                        <asp:Label ID="lblValidUsuario" runat="server"></asp:Label>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style3"></td>
-                    <td class="auto-style4"></td>
-                    <td class="auto-style4"></td>
-                    <td class="auto-style4"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style10"></td>
                     <td class="auto-style4"></td>
                     <td class="auto-style4"></td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>

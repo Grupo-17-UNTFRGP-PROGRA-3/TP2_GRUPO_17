@@ -42,7 +42,9 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:LinkButton ID="lnkbtnRojo" runat="server" OnClick="lnkbtnRojo_Click">Rojo</asp:LinkButton>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

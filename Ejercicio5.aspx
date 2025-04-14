@@ -38,6 +38,11 @@
             </div>
             <asp:Button runat="server" ID="btnCalcularPrecio" Text="Calcular Precio" style="margin-left: 40px; margin-top: 15px; width: 140px" OnClick="btnCalcularPrecio_Click"/>
         </div>
+        <div>
+            <h2 style="margin-left: 80px">
+                <asp:Label ID="lblPrecioTotal" runat="server" Text="Precio total: "></asp:Label>
+            </h2>
+        </div>
     </form>
 </body>
 </html>

@@ -32,7 +32,7 @@ namespace TP2_GRUPO_17
                 }
             }
 
-            lblPrecioTotal.Text = "Precio total: $" + precio.ToString();
+            lblPrecioTotal.Text = "Precio total: " + precio.ToString("C");
         }
     }
 }

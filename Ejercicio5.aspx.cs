@@ -13,5 +13,10 @@ namespace TP2_GRUPO_17
 		{
 
 		}
-	}
+
+        protected void btnCalcularPrecio_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

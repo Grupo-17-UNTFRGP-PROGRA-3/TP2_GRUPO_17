@@ -12,44 +12,14 @@ namespace TP2_GRUPO_17
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                lblValidUsuario.Text = "Ingrese un usuario por favor";
-                lblValidUsuario.ForeColor = Color.Red;
 
-                lblValidClave.Text = "Ingrese una clave por favor";
-                lblValidClave.ForeColor = Color.Red;
-            }
-        }
-
-        protected void txtUsuario_TextChanged(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtUsuario.Text))
-            {
-                lblValidUsuario.Text = "Ingrese un usuario por favor";
-                lblValidUsuario.ForeColor = Color.Red;
-            }
-            else
-            {
-                lblValidUsuario.Text = "";
-            }
-        }
-
-        protected void txtClave_TextChanged(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtClave.Text))
-            {
-                lblValidClave.Text = "Ingrese una clave por favor";
-                lblValidClave.ForeColor = Color.Red;
-            }
-            else
-            {
-                lblValidClave.Text = "";
-            }
         }
         
         protected void btnValidar_Click(object sender, EventArgs e)
         {
+            if (!ValidarCampos())
+                return;
+
             string usuario = txtUsuario.Text.ToLower();
             string clave = txtClave.Text.ToLower();
 
@@ -61,6 +31,35 @@ namespace TP2_GRUPO_17
             {
                 Server.Transfer("~/Ejercicio4_b.aspx");
             }
+        }
+
+        private bool ValidarCampos()
+        {
+            bool camposValidos = true;
+
+            if (string.IsNullOrWhiteSpace(txtUsuario.Text))
+            {
+                lblValidUsuario.Text = "Ingrese un usuario por favor";
+                lblValidUsuario.ForeColor = Color.Red;
+                camposValidos = false;
+            }
+            else
+            {
+                lblValidUsuario.Text = string.Empty;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtClave.Text))
+            {
+                lblValidClave.Text = "Ingrese una clave por favor";
+                lblValidClave.ForeColor = Color.Red;
+                camposValidos = false;
+            }
+            else
+            {
+                lblValidClave.Text = string.Empty;
+            }
+
+            return camposValidos;
         }
     }
 }

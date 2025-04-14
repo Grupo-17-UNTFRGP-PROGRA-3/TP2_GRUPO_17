@@ -61,7 +61,7 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">Usuario: </td>
                     <td class="auto-style7">
-                        <asp:TextBox ID="txtUsuario" runat="server" Width="249px" AutoPostBack="True" OnTextChanged="txtUsuario_TextChanged"></asp:TextBox>
+                        <asp:TextBox ID="txtUsuario" runat="server" Width="249px"></asp:TextBox>
                     </td>
                     <td class="auto-style9">
                         <asp:Label ID="lblValidUsuario" runat="server"></asp:Label>
@@ -73,7 +73,7 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">Clave:</td>
                     <td class="auto-style7">
-                        <asp:TextBox ID="txtClave" runat="server" Width="249px" AutoPostBack="True" OnTextChanged="txtClave_TextChanged" TextMode="Password"></asp:TextBox>
+                        <asp:TextBox ID="txtClave" runat="server" Width="249px" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style9">
                         <asp:Label ID="lblValidClave" runat="server"></asp:Label>

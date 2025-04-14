@@ -24,16 +24,16 @@
                 <p> <strong>Seleccione la cantidad de memoria:</strong></p>
                     <asp:DropDownList ID="DropDownList1" runat="server" Height="20px" Width="154px" style="margin-left: 40px">
                         <asp:ListItem Value="200">2 GB</asp:ListItem>
-                        <asp:ListItem Value="375">4GB</asp:ListItem>
-                        <asp:ListItem Value="500">6GB</asp:ListItem>
+                        <asp:ListItem Value="375">4 GB</asp:ListItem>
+                        <asp:ListItem Value="500">6 GB</asp:ListItem>
                     </asp:DropDownList>
             </div>
             <div>
                 <p><strong>Seleccione accesorios:</strong></p>
-                <asp:CheckBoxList ID="CheckBoxList1" runat="server" style="margin-left: 40px">
+                <asp:CheckBoxList ID="cblAccesorios" runat="server" style="margin-left: 40px">
                     <asp:ListItem Value="2000.50">Monitor LCD</asp:ListItem>
                     <asp:ListItem Value="550.50">HD 500GB</asp:ListItem>
-                    <asp:ListItem Value="1200">Grabador DVD</asp:ListItem>
+                    <asp:ListItem Value="1200.00">Grabador DVD</asp:ListItem>
                 </asp:CheckBoxList>
             </div>
             <asp:Button runat="server" ID="btnCalcularPrecio" Text="Calcular Precio" style="margin-left: 40px; margin-top: 15px; width: 140px" OnClick="btnCalcularPrecio_Click"/>

@@ -18,9 +18,14 @@ namespace TP2_GRUPO_17
         {
             lblTextoColorido.Style.Add("color", "red");
         }
+        protected void lnkbtnAzul_Click(object sender, EventArgs e)
+        {
+            lblTextoColorido.Style.Add("color", "blue");
+        }
         protected void lnkbtnVerde_Click(object sender, EventArgs e)
         {
 			lblTextoColorido.Style.Add("color", "green");
         }
+
     }
 }

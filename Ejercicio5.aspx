@@ -22,7 +22,7 @@
             <div>
                 <h2>Elija su configuración</h2>
                 <p> <strong>Seleccione la cantidad de memoria:</strong></p>
-                    <asp:DropDownList ID="DropDownList1" runat="server" Height="20px" Width="154px" style="margin-left: 40px">
+                    <asp:DropDownList ID="ddlMemoria" runat="server" Height="20px" Width="154px" style="margin-left: 40px">
                         <asp:ListItem Value="200">2 GB</asp:ListItem>
                         <asp:ListItem Value="375">4 GB</asp:ListItem>
                         <asp:ListItem Value="500">6 GB</asp:ListItem>
@@ -31,16 +31,16 @@
             <div>
                 <p><strong>Seleccione accesorios:</strong></p>
                 <asp:CheckBoxList ID="cblAccesorios" runat="server" style="margin-left: 40px">
-                    <asp:ListItem Value="2000.50">Monitor LCD</asp:ListItem>
-                    <asp:ListItem Value="550.50">HD 500GB</asp:ListItem>
-                    <asp:ListItem Value="1200.00">Grabador DVD</asp:ListItem>
+                    <asp:ListItem Value="2000,50">Monitor LCD</asp:ListItem>
+                    <asp:ListItem Value="550,50">HD 500GB</asp:ListItem>
+                    <asp:ListItem Value="1200,00">Grabador DVD</asp:ListItem>
                 </asp:CheckBoxList>
             </div>
             <asp:Button runat="server" ID="btnCalcularPrecio" Text="Calcular Precio" style="margin-left: 40px; margin-top: 15px; width: 140px" OnClick="btnCalcularPrecio_Click"/>
         </div>
         <div>
             <h2 style="margin-left: 80px">
-                <asp:Label ID="lblPrecioTotal" runat="server" Text="Precio total: "></asp:Label>
+                <asp:Label ID="lblPrecioTotal" runat="server"></asp:Label>
             </h2>
         </div>
     </form>

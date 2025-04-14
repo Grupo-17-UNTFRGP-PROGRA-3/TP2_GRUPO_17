@@ -17,7 +17,22 @@ namespace TP2_GRUPO_17
 
         protected void btnCalcularPrecio_Click(object sender, EventArgs e)
         {
-			
-		}
+			float precio;
+
+			precio = float.Parse(ddlMemoria.SelectedValue);
+
+            if (cblAccesorios.SelectedIndex != -1)
+            {
+                foreach (ListItem itemDeLista in cblAccesorios.Items)
+                {
+                    if (itemDeLista.Selected)
+                    {
+                        precio += float.Parse(itemDeLista.Value);
+                    }
+                }
+            }
+
+            lblPrecioTotal.Text = "Precio total: $" + precio.ToString();
+        }
     }
 }

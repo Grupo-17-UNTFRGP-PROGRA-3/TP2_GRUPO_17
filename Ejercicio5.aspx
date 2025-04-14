@@ -22,14 +22,22 @@
             <h2 style="margin-left: 40px">Elija su configuración</h2>
             <p style="margin-left: 40px"> <strong>Seleccione la cantidad de memoria:</strong></p>
             <p style="margin-left: 80px">
-                <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="154px">
+                <asp:DropDownList ID="DropDownList1" runat="server" Height="20px" Width="154px">
                     <asp:ListItem Value="200">2 GB</asp:ListItem>
                     <asp:ListItem Value="375">4GB</asp:ListItem>
                     <asp:ListItem Value="500">6GB</asp:ListItem>
                 </asp:DropDownList>
 &nbsp;&nbsp;&nbsp; </p>
         </div>
+        <div>
+            <p style="margin-left: 40px"><strong>Seleccione accesorios:</strong></p>
+            <p style="margin-left: 80px">
+                <asp:CheckBoxList ID="CheckBoxList1" runat="server">
+                    <asp:ListItem Value="2000.50">Monitor LCD</asp:ListItem>
+                    <asp:ListItem Value="550.50">HD 500GB</asp:ListItem>
+                    <asp:ListItem Value="1200">Grabador DVD</asp:ListItem>
+                </asp:CheckBoxList>
+        </div>
     </form>
-    
 </body>
 </html>

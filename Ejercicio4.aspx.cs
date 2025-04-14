@@ -12,8 +12,14 @@ namespace TP2_GRUPO_17
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblValidUsuario.Text = "Ingrese un usuario por favor";
-            lblValidUsuario.ForeColor = Color.Red;
+            if (!IsPostBack)
+            {
+                lblValidUsuario.Text = "Ingrese un usuario por favor";
+                lblValidUsuario.ForeColor = Color.Red;
+
+                lblValidClave.Text = "Ingrese una clave por favor";
+                lblValidClave.ForeColor = Color.Red;
+            }
         }
 
         protected void txtUsuario_TextChanged(object sender, EventArgs e)
@@ -26,6 +32,19 @@ namespace TP2_GRUPO_17
             else
             {
                 lblValidUsuario.Text = "";
+            }
+        }
+
+        protected void txtClave_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtClave.Text))
+            {
+                lblValidClave.Text = "Ingrese una clave por favor";
+                lblValidClave.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblValidClave.Text = "";
             }
         }
     }

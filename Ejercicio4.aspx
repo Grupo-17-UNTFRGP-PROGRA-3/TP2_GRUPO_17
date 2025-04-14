@@ -71,9 +71,13 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style9">&nbsp;</td>
+                    <td class="auto-style5">Clave:</td>
+                    <td class="auto-style7">
+                        <asp:TextBox ID="txtClave" runat="server" Width="249px" AutoPostBack="True" OnTextChanged="txtClave_TextChanged"></asp:TextBox>
+                    </td>
+                    <td class="auto-style9">
+                        <asp:Label ID="lblValidClave" runat="server"></asp:Label>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>

@@ -8,7 +8,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+
+        <div style="margin-left: 160px">
+            <h1>USUARIO INVALIDO, INGRESO NO PERMITIDO</h1>
         </div>
     </form>
 </body>

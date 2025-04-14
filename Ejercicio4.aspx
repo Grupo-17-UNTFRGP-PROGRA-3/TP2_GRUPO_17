@@ -85,7 +85,7 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style7">
-                        <asp:Button ID="btnValidar" runat="server" OnClick="btnValidar_Click" Text="Validar" />
+                        <asp:Button ID="btnValidar" runat="server" OnClick="btnValidar_Click" Text="Validar" CausesValidation="False" />
                     </td>
                     <td class="auto-style9">&nbsp;</td>
                     <td>&nbsp;</td>

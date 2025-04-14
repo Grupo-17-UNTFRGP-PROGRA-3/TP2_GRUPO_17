@@ -47,7 +47,7 @@ namespace TP2_GRUPO_17
                 lblValidClave.Text = "";
             }
         }
-
+        
         protected void btnValidar_Click(object sender, EventArgs e)
         {
             string usuario = txtUsuario.Text.ToLower();
@@ -56,6 +56,10 @@ namespace TP2_GRUPO_17
             if (usuario == "claudio" && clave == "casas")
             {
                 Server.Transfer("~/Ejercicio4_a.aspx");
+            }
+            else
+            {
+                Server.Transfer("~/Ejercicio4_b.aspx");
             }
         }
     }

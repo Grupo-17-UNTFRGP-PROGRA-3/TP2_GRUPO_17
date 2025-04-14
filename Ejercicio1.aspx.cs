@@ -40,15 +40,24 @@ namespace TP2_GRUPO_17
 				tabla += "<tr><td>TOTAL</td><td>" + (int.Parse(txtCantidad1.Text) + int.Parse(txtCantidad2.Text)) + "</td></tr>";
 				tabla += "</table>";
 				lblTabla.Text = tabla;
+				txtProducto1.Text = "";
+				TxtProducto2.Text = "";
+				txtCantidad1.Text = "";
+				txtCantidad2.Text = "";
 			}
 			else
 			{
-				lblTabla.Text = "Ingrese valores positivos";
+				if (num1 < 0)
+				{
+                    txtCantidad1.Text = "";
+                }
+
+                if (num2 < 0)
+                {
+                    txtCantidad2.Text = "";
+                }
+                lblTabla.Text = "Ingrese valores positivos";
 			}
-			txtProducto1.Text = "";
-			TxtProducto2.Text = "";
-			txtCantidad1.Text = "";
-			txtCantidad2.Text = "";
         }
     }
 }
